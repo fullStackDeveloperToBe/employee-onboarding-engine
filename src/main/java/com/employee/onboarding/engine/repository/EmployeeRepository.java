@@ -7,6 +7,6 @@ import com.employee.onboarding.engine.entity.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer>{
-	public Employee findByIdAndNameandPhone(int id , String name, String Phone);
+	//public Employee findByIdAndNameandPhone(int id , String name, String Phone);
 
 }

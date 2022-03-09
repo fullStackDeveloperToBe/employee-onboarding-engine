@@ -4,10 +4,10 @@
     <bpmn:participant id="Participant_0dgk974" processRef="Process_0vyzbjn" />
   </bpmn:collaboration>
   <bpmn:process id="Process_0vyzbjn" isExecutable="true">
-    <bpmn:startEvent id="StartEvent_1">
+    <bpmn:startEvent id="StartEvent_1" name="Start Process">
       <bpmn:outgoing>Flow_0g2rwy3</bpmn:outgoing>
     </bpmn:startEvent>
-    <bpmn:endEvent id="Event_0ixa45l">
+    <bpmn:endEvent id="Event_0ixa45l" name="End Process">
       <bpmn:incoming>Flow_0g2rwy3</bpmn:incoming>
     </bpmn:endEvent>
     <bpmn:sequenceFlow id="Flow_0g2rwy3" sourceRef="StartEvent_1" targetRef="Event_0ixa45l" />
@@ -23,9 +23,15 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="179" y="159" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="164" y="202" width="67" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_0ixa45l_di" bpmnElement="Event_0ixa45l">
         <dc:Bounds x="672" y="159" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="660" y="202" width="63" height="14" />
+        </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
