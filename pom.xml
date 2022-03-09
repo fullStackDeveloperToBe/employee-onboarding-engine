@@ -15,6 +15,11 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<camunda.spring-boot.version>7.16.0</camunda.spring-boot.version>
+		<camunda-connector-version>1.5.0</camunda-connector-version>
+		<groovy-version>3.0.6</groovy-version>
+		<camunda-mail-connector-version>1.3.0</camunda-mail-connector-version>
+		<camunda.spring.boot.starter.version>7.14.0</camunda.spring.boot.starter.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -102,6 +107,11 @@
 			<groupId>org.springframework.restdocs</groupId>
 			<artifactId>spring-restdocs-mockmvc</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+  			<groupId>org.camunda.bpm.springboot</groupId>
+  			<artifactId>camunda-bpm-spring-boot-starter-external-task-client</artifactId>
+  			<version>7.15.0-alpha5</version>
 		</dependency>
 	</dependencies>
 
