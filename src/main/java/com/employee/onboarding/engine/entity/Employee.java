@@ -17,9 +17,6 @@ public class Employee {
 	@Column(name = "EMPLOYEE_NAME")
 	String name;
 	
-	@Column(name = "EMPLOYEE_ID")
-	String employeeId;
-	
 	@Column(name = "EMAIL")
 	String emailId;
 	
@@ -52,14 +49,6 @@ public class Employee {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getEmployeeId() {
-		return employeeId;
-	}
-
-	public void setEmployeeId(String employeeId) {
-		this.employeeId = employeeId;
 	}
 
 	public String getEmailId() {
