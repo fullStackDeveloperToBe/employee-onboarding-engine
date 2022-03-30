@@ -20,7 +20,6 @@ public class EmployeeOnboardingEngineApplication implements CommandLineRunner {
 	@Override
     public void run(String... args) {
         logUtil.logInfo("EXECUTING : command line runner");
-
-}
+	}
 }
 
