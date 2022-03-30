@@ -18,4 +18,9 @@ public class Logging {
 		logger.debug(message);
 	}
 	
+	public void logError(String message)
+	{
+		logger.error(message);
+	}
+	
 }
