@@ -15,6 +15,7 @@ public class EmployeeOnboardingEngineApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeOnboardingEngineApplication.class, args);
+		System.out.println("Application has been started in port 8081");
 	}
 	
 	@Override
