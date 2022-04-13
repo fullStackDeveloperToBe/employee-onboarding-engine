@@ -56,13 +56,5 @@ public class EmployeeController {
 		logUtil.logInfo("Delete All Employees");
 		employeeservice.deleteAllEmployee();
 	}
-	
-	@GetMapping("/em")
-	private void Ste()
-	{
-		logUtil.logInfo("Get Mapping for getting Particular Employee");
-		System.out.println("Hai");
-	}
-	
 
 }
