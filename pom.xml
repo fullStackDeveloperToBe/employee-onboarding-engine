@@ -128,10 +128,6 @@
   			<artifactId>camunda-bpm-spring-boot-starter-external-task-client</artifactId>
   			<version>7.15.0-alpha5</version>
 		</dependency>
-		<dependency>
-    		<groupId>org.activiti</groupId>
-    		<artifactId>activiti-spring-boot-starter-basic</artifactId>
-		</dependency>
 	</dependencies>
 
 	<build>
