@@ -10,7 +10,7 @@ import com.employee.onboarding.engine.utility.Logging;
 
 @Configuration
 @EnableScheduling
-//@Scheduled(fixedRate=1000)
+//@Scheduled(cron = "0 0 0 * * ?") every day at midnight
 public class Schedule {
 	
 	@Autowired
