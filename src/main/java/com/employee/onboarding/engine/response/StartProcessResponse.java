@@ -54,6 +54,4 @@ public class StartProcessResponse {
 		return builder.toString();
 	}
 
-	
-
 }

@@ -21,7 +21,7 @@ public class EmployeeController {
 	@Autowired
 	Logging logUtil;
 	
-	@GetMapping("/employee")
+	@GetMapping("/employees")
 	private List<Employee> getAllEmployee()
 	{
 		logUtil.logInfo("Get Mapping for getting All Employees");
