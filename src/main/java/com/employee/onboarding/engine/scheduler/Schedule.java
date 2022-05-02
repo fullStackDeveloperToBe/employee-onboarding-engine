@@ -10,7 +10,8 @@ import com.employee.onboarding.engine.utility.Logging;
 
 @Configuration
 @EnableScheduling
-//@Scheduled(cron = "0 0 0 * * ?") every day at midnight
+@Scheduled
+//(cron = "0 0 0 * * ?") every day at midnight
 public class Schedule {
 	
 	@Autowired
