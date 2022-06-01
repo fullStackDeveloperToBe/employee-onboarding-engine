@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
+import java.util.stream.*;
 
 import com.employee.onboarding.engine.entity.Employee;
 import com.employee.onboarding.engine.service.EmployeeService;
@@ -55,6 +56,11 @@ public class EmployeeController {
 	{
 		logUtil.logInfo("Delete All Employees");
 		employeeservice.deleteAllEmployee();
+	}
+	
+	@GetMapping("/")
+	private void Message() {
+		System.out.println("Messase API");
 	}
 
 }
