@@ -22,21 +22,21 @@ public class EmployeeController {
 	@Autowired
 	Logging logUtil;
 	
-	@GetMapping("/employees")
+	@GetMapping("/allEmployee")
 	private List<Employee> getAllEmployee()
 	{
 		logUtil.logInfo("Get Mapping for getting All Employees");
 		return employeeservice.getAllEmployee(); 
 	}
 	
-	@GetMapping("/employee/{id}")
+	@GetMapping("/getEmployee/{id}")
 	private Employee getEmployeeById(@PathVariable("id") int id)
 	{
 		logUtil.logInfo("Get Mapping for getting Particular Employee");
 		return employeeservice.getEmployeeById(id);
 	}
 	
-	@PostMapping("/employee")
+	@PostMapping("/postEmployee")
 	private int saveEmployee(@RequestBody Employee employee) 
 	{
 		logUtil.logInfo("Post Mapping for posting Employee");
@@ -44,14 +44,14 @@ public class EmployeeController {
 		return employee.getId();
 	}
 	
-	@DeleteMapping("/employee/{id}")
+	@DeleteMapping("/deleteEmployee/{id}")
 	private void deleteEmployeeById(@PathVariable("id") int id)
 	{
 		logUtil.logInfo("Delete particular Employees");
 		employeeservice.deleteEmployeeById(id);
 	}
 	
-	@DeleteMapping("/employee")
+	@DeleteMapping("/deleteEmployee")
 	private void deleteAllEmployee()
 	{
 		logUtil.logInfo("Delete All Employees");
