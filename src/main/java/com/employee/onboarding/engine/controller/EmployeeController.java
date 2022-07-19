@@ -25,7 +25,7 @@ public class EmployeeController {
 	@GetMapping("/allEmployee")
 	private List<Employee> getAllEmployee()
 	{
-		logUtil.logInfo("Get Mapping for getting All Employees");
+		logUtil.logInfo("Get Mapping for getting All Employee");
 		return employeeservice.getAllEmployee(); 
 	}
 	

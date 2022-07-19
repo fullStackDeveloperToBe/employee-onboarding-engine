@@ -17,16 +17,16 @@ public class Schedule {
 	@Autowired
 	Logging logUtil;
 	
-	int i = 0;
+	int i = 1;
 	
 	@Bean
 	public void getSchedule() {
-	logUtil.logInfo("This is Scheduling");
+	logUtil.logInfo("This is Scheduling using @Bean annotation");
 	System.out.println("CURRENT TIME Fixed rate task - " + System.currentTimeMillis() / 1000);
 	}
 	
 	
-	@Scheduled(cron = "* * 7 * * ?")
+	//@Scheduled(cron = "* * 23 * * ?")
 	public void execute() 
 	{
 		logUtil.logInfo("This is Scheduling "+ i++);
